@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div id="foo">Hello</div>
+    <script>
+        // 요소 노드의 텍스트 노드는 firstChild 프로퍼티로 접근할 수 있다.
+        console.log(document.getElementById('foo').firstChild); // #text
+
+        // 노드 탐색의 기점이 되는 .banana 요소 노드를 취득한다.
+        const $banana = document.querySelector('.banana');
+
+        // .banana 요소 노드의 부모 노드를 탐색한다.
+        console.log($banana.parentNode); // ul#fruits
+    </script>
+</body>
+
+</html>
